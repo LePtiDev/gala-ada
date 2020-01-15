@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("../../img/BG3.png");
+  background-size: 100%;
+}
+
+.section1 {
+  height: 100vh;
+  width: 100vw;
+}
+.section1 h1 {
+  font-size: 70px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10vh;
+}
+.section1 div {
+  width: 100%;
+  height: 60%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.section1 div .image {
+  width: 50%;
+  height: 100%;
+}
+.section1 div .image img {
+  width: 80%;
+  height: auto;
+}
+.section1 div .description {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 15vw 0 15vw;
+}
+.section1 div .description h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.section1 div .description p {
+  text-align: justify;
+}
+
+nav {
+  height: 130px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 630px;
+  margin-right: 4vw;
+  color: white;
+  font-size: 18px;
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}
+
+button {
+  height: 70px;
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 40px;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: #D5AE53;
+  color: white;
+}
+
+.section3 {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section3 div {
+  height: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.section3 div h5 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 5vh 0 5vh 0;
+}
+.section3 div .reseaux {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section3 div form {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  width: 760px;
+  margin-bottom: 5vh;
+}
+.section3 div form input {
+  background-color: transparent;
+  height: 65px;
+  font-size: 26px;
+  border: solid 2px white;
+}
+.section3 div form #user_email {
+  width: 500px;
+  border-radius: 35px 0 0 35px;
+  padding: 0 0 0 40px;
+}
+.section3 div form #submit {
+  width: 250px;
+  border-radius: 0 35px 35px 0;
+}
+.section3 div .contact {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.section3 div .contact h5 {
+  font-size: 23px;
+}
+
+/*# sourceMappingURL=style-galeries.css.map */
