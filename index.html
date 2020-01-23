@@ -5,20 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./menu/menu-burger.css">
     <title>Gala ADA</title>
 </head>
 <body>
     <Section class="section1">
         <nav>
+
+            <!-- menu burger -->
+
+            <div id="cross" class="cross">
+                <span id="trait1" class="trait1"></span>
+                <span id="trait2" class="trait2"></span>
+                <span id="trait3" class="trait3"></span>
+            </div>
+
+            <div id="menu-burger" class="menu-burger">
+                <p>Fermer</p>
+                <ul class="list-burger">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="#">BILLETTERIE</a></li>
+                    <li><a href="./pages/info/info.html">INFO PRATIQUES</a></li>
+                    <li><a href="./pages/galerie/galeries.html">GALERIE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+
+            <!-- menu desktop -->
             <img class="logo" src="img/Logo-ada.png" alt="logo de l'associattion ada">
             <ul class="menu">
                 <li><a href="#">BILLETTERIE</a></li>
-                <li><a href="#">INFO PRATIQUES</a></li>
+                <li><a href="./pages/info/info.html">INFO PRATIQUES</a></li>
                 <li><a href="./pages/galerie/galeries.html">GALERIE</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="./pages/contact/contact.html">CONTACT</a></li>
             </ul>
         </nav>
         <img class="logo-welcome" src="img/Gala-dore.png" alt="Logo du gala">
+        <img class="logo-welcome-mobile" src="img/Gala-dore-mobile.png" alt="Logo du gala">
         <p class="nom">Par ADA - Aider Donner Agir</p>
         <button>Billetterie</button>
     </Section>
@@ -97,7 +121,7 @@
 
 
         <div class="container3">
-            <div>
+            <div class="div3">
                 <h5>Retrouvez-nous sur les réseaux sociaux</h5>
                 <div class="reseaux">
                     <img src="./img/Facebook.png" alt="logo de facebook">
@@ -111,7 +135,7 @@
                     <input type="submit" id="submit" value="S'abonner">
                 </form>
                 <div class="contact">
-                    <h5>Contact</h5>
+                    <h5><a href="./pages/contact/contact.html">Contact</a></h5>
                     <h5>Mentions légales</h5>
                 </div>
             </div>
@@ -122,6 +146,7 @@
 
 
     <script src="node_modules/moment/moment.js"></script>
+    <script src="./menu/menu.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

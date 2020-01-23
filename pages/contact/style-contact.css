@@ -10,7 +10,7 @@
 
 body {
   background-image: url("../../img/BG3.png");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .section1 {
@@ -23,39 +23,43 @@ body {
   text-align: center;
   margin-top: 10vh;
 }
-.section1 div {
+.section1 .div1 {
   width: 100%;
-  height: 60%;
+  height: auto;
   margin-top: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.section1 div .image {
+.section1 .div1 .image {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.section1 div .image img {
+.section1 .div1 .image img {
   width: 80%;
   height: auto;
 }
-.section1 div .description {
+.section1 .div1 .description {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
   padding: 50px 15vw 0 15vw;
 }
-.section1 div .description h2 {
+.section1 .div1 .description h2 {
   font-size: 40px;
   letter-spacing: 2px;
   font-weight: 500;
+  margin-bottom: 5vh;
 }
-.section1 div .description p {
+.section1 .div1 .description p {
   text-align: justify;
-  margin: 5vh 0 5vh 0;
+  margin-bottom: 5vh;
 }
 
 nav {
@@ -107,7 +111,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-.section3 div {
+.section3 .div3 {
   height: auto;
   width: 60%;
   display: flex;
@@ -115,19 +119,19 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
-.section3 div h5 {
+.section3 .div3 h5 {
   text-align: center;
   font-size: 32px;
   font-weight: 300;
   margin: 5vh 0 5vh 0;
 }
-.section3 div .reseaux {
+.section3 .div3 .reseaux {
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section3 div form {
+.section3 .div3 form {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -135,30 +139,102 @@ button:hover {
   width: 760px;
   margin-bottom: 5vh;
 }
-.section3 div form input {
+.section3 .div3 form input {
   background-color: transparent;
   height: 65px;
   font-size: 26px;
   border: solid 2px white;
 }
-.section3 div form #user_email {
+.section3 .div3 form #user_email {
   width: 500px;
   border-radius: 35px 0 0 35px;
   padding: 0 0 0 40px;
 }
-.section3 div form #submit {
+.section3 .div3 form #submit {
   width: 250px;
   border-radius: 0 35px 35px 0;
 }
-.section3 div .contact {
+.section3 .div3 .contact {
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
 }
-.section3 div .contact h5 {
+.section3 .div3 .contact h5 {
   font-size: 23px;
+}
+
+.question {
+  width: 100vw;
+  height: auto;
+  padding: 0 10vw 0 10vw;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.question .titre-question {
+  text-align: center;
+  margin-bottom: 10vh;
+  font-size: 40px;
+}
+.question .para-question {
+  text-align: justify;
+  margin-bottom: 10vh;
+}
+
+.fiche {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10vh;
+}
+
+.personne {
+  height: 70vh;
+  width: 20vw;
+  border: 3px solid #D5AE53;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 10vh;
+  padding-bottom: 2vh;
+}
+
+.margin-top {
+  margin-top: 20vh;
+}
+
+.un {
+  background-image: url();
+  background-size: cover;
+}
+
+.mail {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10vh;
+}
+
+.question {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20vh;
+}
+
+.prenom {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.profession {
+  text-align: center;
+  font-weight: 200;
 }
 
 @media (max-width: 750px) {
@@ -176,7 +252,7 @@ button:hover {
   }
 
   body {
-    background-image: url("../../img/BG-mobile.png") !important;
+    background-image: url("../../img/BG-mobile.png");
     background-size: cover;
     width: 100vw;
     background-repeat: no-repeat;
@@ -188,20 +264,6 @@ button:hover {
     position: absolute;
     top: 30px;
     left: 30px;
-  }
-
-  form {
-    width: 90vw !important;
-  }
-  form input {
-    background-color: transparent;
-    height: 40px !important;
-    font-size: 15px !important;
-    border: solid 2px white;
-  }
-  form #user_email {
-    padding: 0 0 0 10px !important;
-    width: 74% !important;
   }
 
   .section3 {
@@ -236,26 +298,22 @@ button:hover {
     padding: 0 0 0 10px !important;
     width: 74% !important;
   }
-  form #submit {
-    width: 35% !important;
+
+  .section1 {
+    flex-direction: column;
   }
 
-  .galerie {
-    flex-direction: column !important;
-  }
-  .galerie img {
-    width: 90vw !important;
-  }
-  .galerie h2 {
-    margin-bottom: 5vh;
+  .div1 {
+    flex-direction: column-reverse !important;
+    margin: 0;
+    padding: 0;
   }
 
   .description {
-    width: 90vw !important;
-    padding: 0 !important;
-  }
-  .description p {
-    margin-bottom: 5vh;
+    width: 100% !important;
+    padding: 0 10vw 0 10vw !important;
+    align-items: center;
+    justify-content: center;
   }
 
   h1 {
@@ -268,6 +326,40 @@ button:hover {
     font-size: 24px !important;
     margin-bottom: 5vh;
   }
+
+  button {
+    margin-top: 10vh;
+  }
+
+  .image {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map {
+    width: 90vw !important;
+    margin: 10vh 0 10vh 0;
+  }
+
+  .fiche {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personne {
+    width: 90vw;
+    margin: 5vh !important;
+  }
+
+  .mail {
+    font-size: 20px;
+  }
+
+  .question {
+    font-size: 18px !important;
+  }
 }
 
-/*# sourceMappingURL=style-galeries.css.map */
+/*# sourceMappingURL=style-contact.css.map */

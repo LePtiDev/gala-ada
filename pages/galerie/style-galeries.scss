@@ -29,7 +29,7 @@ $BoutonPoliceSize: 30px;
 // composant section 
 
 .section1{
-    height: 100vh;
+    height: auto;
     width: 100vw;
 
     h1{
@@ -74,6 +74,7 @@ $BoutonPoliceSize: 30px;
 
             p{
                 text-align: justify;
+                margin: 5vh 0 5vh 0;
             }
 
 
@@ -204,19 +205,131 @@ button:hover{
 
 
 
-// début de la page galerie
+// responsive
 
 
-.section2{
+@media (max-width: 750px){
 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    // disparition
+
+    .menu, .logo-welcome, .nom{
+        display: none;
+    }
+    .section1, .section2{
+        background-image: none;
+    }
+
+    //général
+
+    body{
+        background-image: url("../../img/BG-mobile.png") !important;
+        background-size: cover;
+        width: 100vw;
+        background-repeat: no-repeat;
+    }
+
+    // section 1
+
+    .logo{
+        width: 20vw;
+        height: auto;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    form{
+        width: 90vw !important;
+        input{
+            background-color: transparent;
+            height: 40px !important;
+            font-size: 15px !important;
+            border: solid 2px white;
+        }
+
+        #user_email{
+            padding: 0 0 0 10px !important;
+            width: 74% !important;
+        }
+    }
+
+    .section3{
+        margin: 0;
+        .div3{
+            width: 90vw;
+            h5{
+                font-size: 20px;
+            }
+
+            .reseaux{
+                width: 100%;
+                img{
+                    width: 20%;
+                }
+            }
+            .contact{
+                h5{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+
+    form{
+        width: 90vw !important;
+        input{
+            background-color: transparent;
+            height: 40px !important;
+            font-size: 15px !important;
+            border: solid 2px white;
+        }
+
+        #user_email{
+            padding: 0 0 0 10px !important;
+            width: 74% !important;
+        }
+
+        #submit{
+            width: 35% !important;
+        }
+    }
+
+    .galerie{
+        flex-direction: column !important;
+        img{
+            width: 90vw !important;
+        }
+        h2{
+            margin-bottom: 5vh
+        }
+    }
+
+    .description{
+        width: 90vw !important;
+        padding: 0 !important;
+        p{
+            margin-bottom: 5vh
+        }
+        
+    }
+
+    h1{
+        font-size: 30px !important;
+        margin: 0 !important;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 24px !important;
+        margin-bottom: 5vh;
+    }
 }
-
-
-
-
-
-
-
-
 
 

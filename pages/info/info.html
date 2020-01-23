@@ -6,40 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Galeries</title>
     <link rel="stylesheet" href="style-info.css">
+    <link rel="stylesheet" href="../../menu/menu-burger.css">
 </head>
 <body>
     <Section class="section1">
         <nav>
-            <img class="logo" src="../../img/Logo-ada.png" alt="logo de l'associattion ada">
+            <!-- menu burger -->
+
+            <div id="cross" class="cross">
+                <span id="trait1" class="trait1"></span>
+                <span id="trait2" class="trait2"></span>
+                <span id="trait3" class="trait3"></span>
+            </div>
+
+            <div id="menu-burger" class="menu-burger">
+                <p>Fermer</p>
+                <ul class="list-burger">
+                    <li><a href="../../index.html">ACCUEIL</a></li>
+                    <li><a href="#">BILLETTERIE</a></li>
+                    <li><a href="../info/info.html">INFO PRATIQUES</a></li>
+                    <li><a href="../galerie/galeries.html">GALERIE</a></li>
+                    <li><a href="../contact/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+
+            <!-- menu desktop -->
+            <a href="../../index.html"><img class="logo" src="../../img/Logo-ada.png" alt="logo de l'associattion ada"></a>
             <ul class="menu">
-                <li>BILLETTERIE</li>
-                <li>INFO PRATIQUES</li>
-                <li>GALERIE</li>
-                <li>CONTACT</li>
+                <li><a href="#">BILLETTERIE</a></li>
+                <li><a href="../info/info.html">INFO PRATIQUES</a></li>
+                <li><a href="../galerie/galeries.html">GALERIE</a></li>
+                <li><a href="../contact/contact.html">CONTACT</a></li>
             </ul>
         </nav>
 
         <h1>Infos pratique</h1>
 
-        <div>
+        <div class="div1">
                 <div class="image">
-                    <img src="../../img/map.png" alt="photo du gala de ada en 2019">
+                    <img class="map" src="../../img/map.png" alt="photo du gala de ada en 2019">
                 </div>
                 <div class="description">
-                    <h2>Adresse de l'évenement</h2>
+                    <h2>Accès</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, est 
-                        quas minus nihil voluptas accusamus, sunt autem qui cupiditate rerum magnam 
-                        fugit eaque nemo aliquid labore ut ex eius aliquam.
+                        Parc nautique départemental nautique de l’Île Monsieur, 4 Rue de Saint-Cloud, 92310 Sèvres.
+
+                        Ouverture des portes le vendredi 13 mars à 19h.
+                        
+                        Accessible par At vero eos et accusamus et 
+                        iusto odio dignissimos ducimus qui blanditiis 
+                        praesentium voluptatum deleniti atque corrupti.
                     </p>
     
                     <button>Faire un don</button>
                 </div>
-            </div>
+        </div>
+
+        <div class="question">
+            <h3 class="titre-question">Qu’est-ce que le Gala ADA ?</h3>
+            <p class="para-question">
+                Le grand gala caritatif ADA se tiendra le vendredi 13 mars 2020 au parc départemental nautique de l’Île Monsieur à Sèvres et 
+                aura pour thème les 1001 étoiles.  Suite au succès de la première édition ayant attiré 150 personnes, ADA décide de relancer 
+                le projet en ouvrant cette année le gala à 300 invités. Ces derniers assisteront à différentes animations afin d’animé leur soirée :   <br><br>
+                
+                - Un défilé pour animer la soirée ainsi que présenter des créations de différents designers, suivi par la vente de ces dernières.  <br><br>
+                
+                - Une exposition d’œuvres d’art, peintures et photographies. La vente aura lieu grâce à la générosité de différents artistes.   <br><br>
+                
+                - Un buffet à volonté pour tous les invités, remplis de douceurs aussi bien salées que sucrées.   <br><br>
+                
+                - Un discours des associations bénéficiaires de ce gala. <br><br>
+                
+                - Un spectacle pyrotechnique afin de remplir d’étoiles les yeux de nos invités  <br><br>
+                
+                - Une coupe de champagne offerte à l’arrivée dès votre arrivé <br><br>
+                
+                - Une ambiance dansante sur la fin de soirée  <br><br>
+                
+                Ce gala caritatif est organisé au profit de quatre associations qui sont respectivement : Magev, ADAM Cancer, La mie de 
+                Pain, Les amis de Mathéo. Ce dossier sponsoring va vous proposer de participer à cette grande aventure caritative à votre 
+                mesure.
+            </p>
+
+            <button>Billetterie</button>
+        </div>
     </Section>
 
     <section class="section3">
-        <div>
+        <div class="div3">
             <h5>Retrouvez-nous sur les réseaux sociaux</h5>
             <div class="reseaux">
                 <img src="../../img/Facebook.png" alt="logo de facebook">
@@ -58,5 +113,6 @@
             </div>
         </div>
     </section>
+    <script src="../../menu/menu.js"></script>
 </body>
 </html>

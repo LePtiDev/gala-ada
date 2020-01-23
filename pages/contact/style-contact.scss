@@ -225,6 +225,58 @@ button:hover{
     }
 }
 
+.fiche{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.personne{
+    height: 70vh;
+    width: 20vw;
+    border: 3px solid #D5AE53;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10vh;
+    padding-bottom: 2vh;
+}
+
+.margin-top{
+    margin-top: 20vh;
+}
+
+.un{
+    background-image: url();
+    background-size: cover
+}
+
+.mail{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10vh;
+}
+
+.question{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20vh;
+}
+
+.prenom{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.profession{
+    text-align: center;
+    font-weight: 200;
+}
+
 
 
 
@@ -366,5 +418,23 @@ button:hover{
     .map{
         width: 90vw !important;
         margin: 10vh 0 10vh 0;
+    }
+
+    .fiche{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personne{
+        width: 90vw;
+        margin: 5vh !important; 
+    }
+
+    .mail{
+        font-size: 20px;
+    }
+
+    .question{
+        font-size: 18px !important;
     }
 }
